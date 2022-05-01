@@ -6,18 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Talk</title>
     <style>
-        body{
+        *{
             padding: 0;
             margin: 0;
             border: 0;
            
         }
-       
-        h1{
+        body{
+            background-color: rgba(208, 46, 78, 0.715);
+        }
+        .header{
+            padding: 2rem;
+            height: 3rem;
+            background-color: #f1f100;
             text-align: center;
         }
+       
         #txt-input{
-          
+            border: 1.1px solid black;
             border-radius: 1rem;
             margin: 1rem auto;
             padding: 5px;
@@ -27,6 +33,8 @@
         }
 
         button{
+            background-color: #f1f100;
+            border-radius: 9px;
             display: block;
             margin: 2rem auto;
             text-align: center;
@@ -39,6 +47,7 @@
             margin-top: 3rem;
         }
         #output{
+            color: black;
             border-radius: 1rem;
             border: 0.1px solid black;
             margin: 1rem auto;
@@ -47,6 +56,7 @@
             height: 20vh;
         }
         #footer-txt{
+            background-color: #f1f100;
             text-align: center;
         }
         #footer-txt p{
@@ -59,23 +69,29 @@
     </style>
 </head>
 <body>
-       <div class="body">
+       
 
            <!-- header  -->
-           <h1>🍌 Banana Talk 🍌</h1>
-        
-        <!-- input  -->
-        <textarea id="txt-input" placeholder="Enter the text which you want to be translated."></textarea>
-        
-        <!-- translate button  -->
-        <button id="btn-translate">Translate ✨</button>
-        
-        <!-- output  -->
-        <h2>Output will come here 👇</h2>
-        <div id="output"></div>
-        
-        <!-- footer  -->
-        <footer id="footer-txt">
+           <header class="header">
+               <h1>🍌 Banana Talk 🍌</h1>
+            </header>
+            
+            <div class="body">
+
+                
+                <!-- input  -->
+                <textarea id="txt-input" placeholder="Enter the text which you want to be translated."></textarea>
+                
+                <!-- translate button  -->
+                <button id="btn-translate">Translate ✨</button>
+                
+                <!-- output  -->
+                <h2>Output will come here 👇</h2>
+                <div id="output"></div>
+            </div>
+                
+                <!-- footer  -->
+                <footer id="footer-txt">
             <div>
                 <h2>🍌about🍌</h2>
                 <p>You thought minions speak gibberish? Well no! You're wrong!</p>
